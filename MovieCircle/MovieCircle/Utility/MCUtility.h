@@ -19,8 +19,21 @@
 #define kDeviceHeight                           ([UIScreen mainScreen].bounds.size.height)
 #define kDeviceWidth                            ([UIScreen mainScreen].bounds.size.width)
 
-#define kRatioHeight(height)                    (kDeviceHeight * (height/667.0))
-#define kRatioWidth(width)                      (kDeviceWidth * (width/375.0))
+#define kRatioHeight(height)                    (kDeviceHeight * (height/568.0))
+#define kRatioWidth(width)                      (kDeviceWidth * (width/320.0))
+#define kTableViewCellHeight                    (44.0)
+
+
+#define kYellowColor                            ([UIColor colorWithRed:252.0/255.0 green:172.0/255.0 blue:10.0/255.0 alpha:1])
+
+
+//develope key   IgTUqTE1NuQbAQfGAHkz1K6A
+#define kBaidu_AppKey                           (@"IgTUqTE1NuQbAQfGAHkz1K6A")
+
+
+
+
+
 
 
 //appversion

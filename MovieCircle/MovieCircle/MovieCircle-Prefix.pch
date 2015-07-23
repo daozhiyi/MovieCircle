@@ -38,7 +38,7 @@
 #import "MCRequestManager.h"
 #import "UIFont+Design.h"
 
-
+#import <BaiduMapAPI/BMapKit.h>
 
 #import <JSONKit.h>
 #import <MBProgressHUD.h>

@@ -8,6 +8,7 @@
 
 #import "MCPayViewController.h"
 
+#import "MCPayItemButton.h"
 @interface MCPayViewController ()
 
 @end
@@ -17,7 +18,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"购买";
+    
+    [self customView];
     // Do any additional setup after loading the view.
+}
+
+-(void)customView
+{
+    NSArray *payButtonTitleArray = @[@"买影币",@"买粉币",@"电影票预售",@"购买道具",@"实物拍卖"];
+    int num = 3;
+    for (int i = 0; i < 2; i ++) {
+        if (i == 1) {
+            num = 2;
+        }
+        for (int j = 0; j < num ; j ++) {
+            MCPayItemButton *payButton = [MCPayItemButton buttonWithType:UIButtonTypeCustom];
+            payButton.frame = CGRectMake(kDeviceWidth/3 * j, kDeviceWidth/3 * i, kDeviceWidth/3, kDeviceWidth/3);
+            payButton.tag = 3*i + j;
+            [payButton setImage:[[MCImageCache sharedInstance]imageNamed:[NSString stringWithFormat:@"payImage%d",3*i+j]] forState:UIControlStateNormal];
+            [payButton setTitle:payButtonTitleArray[3*i +j] forState:UIControlStateNormal];
+            payButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+            [payButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//            payButton.imageView.contentMode = UIViewContentModeCenter;
+            
+//            payButton.imageEdgeInsets = UIEdgeInsetsMake(20 , 20, 20, 20);
+            [self.view addSubview:payButton];
+        }
+    }
+}
+
+-(void)handlePayButton:(UIButton *)button
+{
+
 }
 
 - (void)didReceiveMemoryWarning {

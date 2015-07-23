@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06A801881B5EB76700F1F912 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A801861B5EB76700F1F912 /* BaiduMapAPI.framework */; };
+		06A801891B5EB76700F1F912 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 06A801871B5EB76700F1F912 /* mapapi.bundle */; };
+		06A8018B1B5EBB8300F1F912 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A8018A1B5EBB8300F1F912 /* CoreLocation.framework */; };
+		06A8018D1B5EBB8B00F1F912 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A8018C1B5EBB8B00F1F912 /* QuartzCore.framework */; };
+		06A8018F1B5EBB9800F1F912 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A8018E1B5EBB9800F1F912 /* OpenGLES.framework */; };
+		06A801911B5EBBA000F1F912 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A801901B5EBBA000F1F912 /* SystemConfiguration.framework */; };
+		06A801931B5EBBA700F1F912 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A801921B5EBBA700F1F912 /* CoreGraphics.framework */; };
+		06A801951B5EBBB000F1F912 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A801941B5EBBB000F1F912 /* Security.framework */; };
+		06C8C6A41B5FFB640012DD4E /* MCMineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C8C6A31B5FFB640012DD4E /* MCMineButton.m */; };
+		06C8C6A71B6002C30012DD4E /* MCFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C8C6A61B6002C30012DD4E /* MCFeedBackViewController.m */; };
+		06C8C6AB1B6087E70012DD4E /* yingshi1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6A91B6087E70012DD4E /* yingshi1.png */; };
+		06C8C6AC1B6087E70012DD4E /* yingshi2.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6AA1B6087E70012DD4E /* yingshi2.png */; };
+		06C8C6B31B6088920012DD4E /* ditu1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6AE1B6088920012DD4E /* ditu1@2x.png */; };
+		06C8C6B41B6088920012DD4E /* ditu2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6AF1B6088920012DD4E /* ditu2@2x.png */; };
+		06C8C6B51B6088920012DD4E /* liebiao1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6B01B6088920012DD4E /* liebiao1@2x.png */; };
+		06C8C6B61B6088920012DD4E /* liebiao2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6B11B6088920012DD4E /* liebiao2@2x.png */; };
+		06C8C6B71B6088920012DD4E /* sousuo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6B21B6088920012DD4E /* sousuo@2x.png */; };
+		06C8C6BD1B608A480012DD4E /* tu1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6B81B608A480012DD4E /* tu1.png */; };
+		06C8C6BE1B608A480012DD4E /* tu2.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6B91B608A480012DD4E /* tu2.png */; };
+		06C8C6BF1B608A480012DD4E /* tu3.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6BA1B608A480012DD4E /* tu3.png */; };
+		06C8C6C01B608A480012DD4E /* tu4.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6BB1B608A480012DD4E /* tu4.png */; };
+		06C8C6C11B608A480012DD4E /* tu5.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6BC1B608A480012DD4E /* tu5.png */; };
+		06C8C6C41B608AFB0012DD4E /* touxiang.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6C31B608AFB0012DD4E /* touxiang.png */; };
+		06C8C6CB1B608D7C0012DD4E /* payImage4.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6C61B608D7C0012DD4E /* payImage4.png */; };
+		06C8C6CC1B608D7C0012DD4E /* payImage3.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6C71B608D7C0012DD4E /* payImage3.png */; };
+		06C8C6CD1B608D7C0012DD4E /* payImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6C81B608D7C0012DD4E /* payImage2.png */; };
+		06C8C6CE1B608D7C0012DD4E /* payImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6C91B608D7C0012DD4E /* payImage1.png */; };
+		06C8C6CF1B608D7C0012DD4E /* payImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6CA1B608D7C0012DD4E /* payImage0.png */; };
+		06C8C6D21B609F9F0012DD4E /* MCPayItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C8C6D11B609F9F0012DD4E /* MCPayItemButton.m */; };
 		9ACC6A30C56818218B6711AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0EA6DB871BF48394B4C421 /* libPods.a */; };
 		B241355A1B48CD88006398B0 /* MCTabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B24135591B48CD88006398B0 /* MCTabbarButton.m */; };
 		B241356B1B48D6B8006398B0 /* shiying_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B241355B1B48D6B7006398B0 /* shiying_selected@3x.png */; };
@@ -26,12 +55,11 @@
 		B24135791B48D6B8006398B0 /* wo_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B24135691B48D6B8006398B0 /* wo_normal@2x.png */; };
 		B241357A1B48D6B8006398B0 /* user-alt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B241356A1B48D6B8006398B0 /* user-alt@3x.png */; };
 		B241357C1B48D9CE006398B0 /* caidan.png in Resources */ = {isa = PBXBuildFile; fileRef = B241357B1B48D9CE006398B0 /* caidan.png */; };
-		B241357F1B48F64D006398B0 /* MCNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B241357E1B48F64D006398B0 /* MCNextViewController.m */; };
 		B24135821B4902B0006398B0 /* bangdan_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B24135801B4902B0006398B0 /* bangdan_normal@3x.png */; };
 		B24135831B4902B0006398B0 /* bangdan_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B24135811B4902B0006398B0 /* bangdan_normal@2x.png */; };
 		B29DA22D1B4007B90020EC49 /* MCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29DA22C1B4007B90020EC49 /* MCMainViewController.m */; };
 		B2CC26781B3F87AD002D3A1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CC26771B3F87AD002D3A1F /* main.m */; };
-		B2CC267B1B3F87AD002D3A1F /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CC267A1B3F87AD002D3A1F /* MCAppDelegate.m */; };
+		B2CC267B1B3F87AD002D3A1F /* MCAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B2CC267A1B3F87AD002D3A1F /* MCAppDelegate.mm */; };
 		B2CC267E1B3F87AD002D3A1F /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CC267D1B3F87AD002D3A1F /* MCViewController.m */; };
 		B2CC26811B3F87AD002D3A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CC267F1B3F87AD002D3A1F /* Main.storyboard */; };
 		B2CC26831B3F87AD002D3A1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CC26821B3F87AD002D3A1F /* Images.xcassets */; };
@@ -70,6 +98,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06A801861B5EB76700F1F912 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
+		06A801871B5EB76700F1F912 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		06A8018A1B5EBB8300F1F912 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		06A8018C1B5EBB8B00F1F912 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		06A8018E1B5EBB9800F1F912 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		06A801901B5EBBA000F1F912 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		06A801921B5EBBA700F1F912 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06A801941B5EBBB000F1F912 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		06C8C6A21B5FFB640012DD4E /* MCMineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMineButton.h; sourceTree = "<group>"; };
+		06C8C6A31B5FFB640012DD4E /* MCMineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMineButton.m; sourceTree = "<group>"; };
+		06C8C6A51B6002C30012DD4E /* MCFeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFeedBackViewController.h; sourceTree = "<group>"; };
+		06C8C6A61B6002C30012DD4E /* MCFeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFeedBackViewController.m; sourceTree = "<group>"; };
+		06C8C6A91B6087E70012DD4E /* yingshi1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yingshi1.png; sourceTree = "<group>"; };
+		06C8C6AA1B6087E70012DD4E /* yingshi2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yingshi2.png; sourceTree = "<group>"; };
+		06C8C6AE1B6088920012DD4E /* ditu1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ditu1@2x.png"; sourceTree = "<group>"; };
+		06C8C6AF1B6088920012DD4E /* ditu2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ditu2@2x.png"; sourceTree = "<group>"; };
+		06C8C6B01B6088920012DD4E /* liebiao1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "liebiao1@2x.png"; sourceTree = "<group>"; };
+		06C8C6B11B6088920012DD4E /* liebiao2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "liebiao2@2x.png"; sourceTree = "<group>"; };
+		06C8C6B21B6088920012DD4E /* sousuo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sousuo@2x.png"; sourceTree = "<group>"; };
+		06C8C6B81B608A480012DD4E /* tu1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tu1.png; sourceTree = "<group>"; };
+		06C8C6B91B608A480012DD4E /* tu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tu2.png; sourceTree = "<group>"; };
+		06C8C6BA1B608A480012DD4E /* tu3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tu3.png; sourceTree = "<group>"; };
+		06C8C6BB1B608A480012DD4E /* tu4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tu4.png; sourceTree = "<group>"; };
+		06C8C6BC1B608A480012DD4E /* tu5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tu5.png; sourceTree = "<group>"; };
+		06C8C6C31B608AFB0012DD4E /* touxiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touxiang.png; sourceTree = "<group>"; };
+		06C8C6C61B608D7C0012DD4E /* payImage4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payImage4.png; sourceTree = "<group>"; };
+		06C8C6C71B608D7C0012DD4E /* payImage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payImage3.png; sourceTree = "<group>"; };
+		06C8C6C81B608D7C0012DD4E /* payImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payImage2.png; sourceTree = "<group>"; };
+		06C8C6C91B608D7C0012DD4E /* payImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payImage1.png; sourceTree = "<group>"; };
+		06C8C6CA1B608D7C0012DD4E /* payImage0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payImage0.png; sourceTree = "<group>"; };
+		06C8C6D01B609F9F0012DD4E /* MCPayItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPayItemButton.h; sourceTree = "<group>"; };
+		06C8C6D11B609F9F0012DD4E /* MCPayItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPayItemButton.m; sourceTree = "<group>"; };
 		9C0EA6DB871BF48394B4C421 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A186EAECD311F0766414FD0A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B24135581B48CD88006398B0 /* MCTabbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTabbarButton.h; sourceTree = "<group>"; };
@@ -91,8 +151,6 @@
 		B24135691B48D6B8006398B0 /* wo_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wo_normal@2x.png"; sourceTree = "<group>"; };
 		B241356A1B48D6B8006398B0 /* user-alt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-alt@3x.png"; sourceTree = "<group>"; };
 		B241357B1B48D9CE006398B0 /* caidan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = caidan.png; sourceTree = "<group>"; };
-		B241357D1B48F64D006398B0 /* MCNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNextViewController.h; sourceTree = "<group>"; };
-		B241357E1B48F64D006398B0 /* MCNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNextViewController.m; sourceTree = "<group>"; };
 		B24135801B4902B0006398B0 /* bangdan_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangdan_normal@3x.png"; sourceTree = "<group>"; };
 		B24135811B4902B0006398B0 /* bangdan_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bangdan_normal@2x.png"; sourceTree = "<group>"; };
 		B29DA22B1B4007B90020EC49 /* MCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMainViewController.h; sourceTree = "<group>"; };
@@ -101,7 +159,7 @@
 		B2CC26761B3F87AD002D3A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2CC26771B3F87AD002D3A1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2CC26791B3F87AD002D3A1F /* MCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
-		B2CC267A1B3F87AD002D3A1F /* MCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
+		B2CC267A1B3F87AD002D3A1F /* MCAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MCAppDelegate.mm; sourceTree = "<group>"; };
 		B2CC267C1B3F87AD002D3A1F /* MCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCViewController.h; sourceTree = "<group>"; };
 		B2CC267D1B3F87AD002D3A1F /* MCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCViewController.m; sourceTree = "<group>"; };
 		B2CC26801B3F87AD002D3A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,6 +219,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A801951B5EBBB000F1F912 /* Security.framework in Frameworks */,
+				06A801931B5EBBA700F1F912 /* CoreGraphics.framework in Frameworks */,
+				06A801911B5EBBA000F1F912 /* SystemConfiguration.framework in Frameworks */,
+				06A8018F1B5EBB9800F1F912 /* OpenGLES.framework in Frameworks */,
+				06A8018D1B5EBB8B00F1F912 /* QuartzCore.framework in Frameworks */,
+				06A8018B1B5EBB8300F1F912 /* CoreLocation.framework in Frameworks */,
+				06A801881B5EB76700F1F912 /* BaiduMapAPI.framework in Frameworks */,
 				9ACC6A30C56818218B6711AC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +240,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06A801851B5EB76700F1F912 /* BaiduMap */ = {
+			isa = PBXGroup;
+			children = (
+				06A801861B5EB76700F1F912 /* BaiduMapAPI.framework */,
+				06A801871B5EB76700F1F912 /* mapapi.bundle */,
+			);
+			path = BaiduMap;
+			sourceTree = "<group>";
+		};
+		06C8C6A81B6087C70012DD4E /* knowMovie */ = {
+			isa = PBXGroup;
+			children = (
+				06C8C6A91B6087E70012DD4E /* yingshi1.png */,
+				06C8C6AA1B6087E70012DD4E /* yingshi2.png */,
+			);
+			name = knowMovie;
+			sourceTree = "<group>";
+		};
+		06C8C6AD1B60887C0012DD4E /* nearby */ = {
+			isa = PBXGroup;
+			children = (
+				06C8C6AE1B6088920012DD4E /* ditu1@2x.png */,
+				06C8C6AF1B6088920012DD4E /* ditu2@2x.png */,
+				06C8C6B01B6088920012DD4E /* liebiao1@2x.png */,
+				06C8C6B11B6088920012DD4E /* liebiao2@2x.png */,
+				06C8C6B21B6088920012DD4E /* sousuo@2x.png */,
+				06C8C6B81B608A480012DD4E /* tu1.png */,
+				06C8C6B91B608A480012DD4E /* tu2.png */,
+				06C8C6BA1B608A480012DD4E /* tu3.png */,
+				06C8C6BB1B608A480012DD4E /* tu4.png */,
+				06C8C6BC1B608A480012DD4E /* tu5.png */,
+			);
+			name = nearby;
+			sourceTree = "<group>";
+		};
+		06C8C6C21B608AF00012DD4E /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				06C8C6C31B608AFB0012DD4E /* touxiang.png */,
+			);
+			name = mine;
+			sourceTree = "<group>";
+		};
+		06C8C6C51B608D6C0012DD4E /* pay */ = {
+			isa = PBXGroup;
+			children = (
+				06C8C6C61B608D7C0012DD4E /* payImage4.png */,
+				06C8C6C71B608D7C0012DD4E /* payImage3.png */,
+				06C8C6C81B608D7C0012DD4E /* payImage2.png */,
+				06C8C6C91B608D7C0012DD4E /* payImage1.png */,
+				06C8C6CA1B608D7C0012DD4E /* payImage0.png */,
+			);
+			name = pay;
+			sourceTree = "<group>";
+		};
 		40350DB94457D4435397CBEC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +307,12 @@
 		72C572BF69C3E5A272F4A58A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06A801941B5EBBB000F1F912 /* Security.framework */,
+				06A801921B5EBBA700F1F912 /* CoreGraphics.framework */,
+				06A801901B5EBBA000F1F912 /* SystemConfiguration.framework */,
+				06A8018E1B5EBB9800F1F912 /* OpenGLES.framework */,
+				06A8018C1B5EBB8B00F1F912 /* QuartzCore.framework */,
+				06A8018A1B5EBB8300F1F912 /* CoreLocation.framework */,
 				9C0EA6DB871BF48394B4C421 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -253,7 +379,7 @@
 				B2CC26EA1B3FC0C1002D3A1F /* Depend */,
 				B2CC26E81B3FC0A4002D3A1F /* Model */,
 				B2CC26791B3F87AD002D3A1F /* MCAppDelegate.h */,
-				B2CC267A1B3F87AD002D3A1F /* MCAppDelegate.m */,
+				B2CC267A1B3F87AD002D3A1F /* MCAppDelegate.mm */,
 				B2CC267C1B3F87AD002D3A1F /* MCViewController.h */,
 				B2CC267D1B3F87AD002D3A1F /* MCViewController.m */,
 				B2CC267F1B3F87AD002D3A1F /* Main.storyboard */,
@@ -323,6 +449,7 @@
 		B2CC26EA1B3FC0C1002D3A1F /* Depend */ = {
 			isa = PBXGroup;
 			children = (
+				06A801851B5EB76700F1F912 /* BaiduMap */,
 				B2CC27041B3FC829002D3A1F /* GCDMulticastDelegate */,
 			);
 			path = Depend;
@@ -364,6 +491,10 @@
 		B2CC26ED1B3FC0F1002D3A1F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				06C8C6C51B608D6C0012DD4E /* pay */,
+				06C8C6C21B608AF00012DD4E /* mine */,
+				06C8C6AD1B60887C0012DD4E /* nearby */,
+				06C8C6A81B6087C70012DD4E /* knowMovie */,
 				B24135431B48CB5A006398B0 /* tabbar */,
 			);
 			path = Resource;
@@ -392,6 +523,8 @@
 			children = (
 				B2CC272A1B3FCB7E002D3A1F /* MCPayViewController.h */,
 				B2CC272B1B3FCB7E002D3A1F /* MCPayViewController.m */,
+				06C8C6D01B609F9F0012DD4E /* MCPayItemButton.h */,
+				06C8C6D11B609F9F0012DD4E /* MCPayItemButton.m */,
 			);
 			path = Pay;
 			sourceTree = "<group>";
@@ -401,8 +534,6 @@
 			children = (
 				B2CC272D1B3FCB95002D3A1F /* MCNearbyViewController.h */,
 				B2CC272E1B3FCB95002D3A1F /* MCNearbyViewController.m */,
-				B241357D1B48F64D006398B0 /* MCNextViewController.h */,
-				B241357E1B48F64D006398B0 /* MCNextViewController.m */,
 			);
 			path = Nearby;
 			sourceTree = "<group>";
@@ -412,6 +543,10 @@
 			children = (
 				B2CC27301B3FCBA8002D3A1F /* MCMineViewController.h */,
 				B2CC27311B3FCBA8002D3A1F /* MCMineViewController.m */,
+				06C8C6A21B5FFB640012DD4E /* MCMineButton.h */,
+				06C8C6A31B5FFB640012DD4E /* MCMineButton.m */,
+				06C8C6A51B6002C30012DD4E /* MCFeedBackViewController.h */,
+				06C8C6A61B6002C30012DD4E /* MCFeedBackViewController.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -477,6 +612,7 @@
 				TargetAttributes = {
 					B2CC26711B3F87AD002D3A1F = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = M4QZ3Y5DZP;
 					};
 					B2CC268A1B3F87AD002D3A1F = {
 						CreatedOnToolsVersion = 6.3;
@@ -508,8 +644,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A801891B5EB76700F1F912 /* mapapi.bundle in Resources */,
 				B241356B1B48D6B8006398B0 /* shiying_selected@3x.png in Resources */,
+				06C8C6CC1B608D7C0012DD4E /* payImage3.png in Resources */,
 				B24135761B48D6B8006398B0 /* 图层-32@3x.png in Resources */,
+				06C8C6BF1B608A480012DD4E /* tu3.png in Resources */,
+				06C8C6AB1B6087E70012DD4E /* yingshi1.png in Resources */,
+				06C8C6C11B608A480012DD4E /* tu5.png in Resources */,
+				06C8C6CF1B608D7C0012DD4E /* payImage0.png in Resources */,
+				06C8C6AC1B6087E70012DD4E /* yingshi2.png in Resources */,
 				B24135771B48D6B8006398B0 /* fujin_normal@2x.png in Resources */,
 				B241356C1B48D6B8006398B0 /* shiying_selected@2x.png in Resources */,
 				B2CC26811B3F87AD002D3A1F /* Main.storyboard in Resources */,
@@ -519,17 +662,29 @@
 				B24135821B4902B0006398B0 /* bangdan_normal@3x.png in Resources */,
 				B241356E1B48D6B8006398B0 /* shiying_normal@2x.png in Resources */,
 				B241357C1B48D9CE006398B0 /* caidan.png in Resources */,
+				06C8C6CD1B608D7C0012DD4E /* payImage2.png in Resources */,
+				06C8C6B71B6088920012DD4E /* sousuo@2x.png in Resources */,
+				06C8C6CB1B608D7C0012DD4E /* payImage4.png in Resources */,
+				06C8C6B61B6088920012DD4E /* liebiao2@2x.png in Resources */,
 				B24135701B48D6B8006398B0 /* neigou_selected@3x.png in Resources */,
 				B241356D1B48D6B8006398B0 /* shiying_normal@3x.png in Resources */,
 				B24135741B48D6B8006398B0 /* wo_selected@3x.png in Resources */,
 				B241357A1B48D6B8006398B0 /* user-alt@3x.png in Resources */,
+				06C8C6C41B608AFB0012DD4E /* touxiang.png in Resources */,
 				B24135721B48D6B8006398B0 /* 图层-18@3x.png in Resources */,
+				06C8C6BE1B608A480012DD4E /* tu2.png in Resources */,
 				B24135831B4902B0006398B0 /* bangdan_normal@2x.png in Resources */,
+				06C8C6B31B6088920012DD4E /* ditu1@2x.png in Resources */,
 				B24135781B48D6B8006398B0 /* positioning@3x.png in Resources */,
+				06C8C6BD1B608A480012DD4E /* tu1.png in Resources */,
 				B24135711B48D6B8006398B0 /* bangdan_selected@2x.png in Resources */,
 				B241356F1B48D6B8006398B0 /* neigou_selected@2x.png in Resources */,
 				B2CC26831B3F87AD002D3A1F /* Images.xcassets in Resources */,
+				06C8C6B41B6088920012DD4E /* ditu2@2x.png in Resources */,
+				06C8C6B51B6088920012DD4E /* liebiao1@2x.png in Resources */,
 				B24135791B48D6B8006398B0 /* wo_normal@2x.png in Resources */,
+				06C8C6CE1B608D7C0012DD4E /* payImage1.png in Resources */,
+				06C8C6C01B608A480012DD4E /* tu4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,18 +748,20 @@
 				B2CC26F61B3FC6DC002D3A1F /* MCModel.m in Sources */,
 				B2CC27111B3FC908002D3A1F /* MCTools.m in Sources */,
 				B2CC270D1B3FC88D002D3A1F /* MCRequestManager.m in Sources */,
-				B241357F1B48F64D006398B0 /* MCNextViewController.m in Sources */,
-				B2CC267B1B3F87AD002D3A1F /* MCAppDelegate.m in Sources */,
+				B2CC267B1B3F87AD002D3A1F /* MCAppDelegate.mm in Sources */,
 				B2CC270A1B3FC849002D3A1F /* MCConfiguration.m in Sources */,
 				B2CC27291B3FCB6C002D3A1F /* MCRankingListViewController.m in Sources */,
 				B2CC27031B3FC807002D3A1F /* MCNavigationViewController.m in Sources */,
 				B2CC27071B3FC82A002D3A1F /* GCDMulticastDelegate.m in Sources */,
 				B241355A1B48CD88006398B0 /* MCTabbarButton.m in Sources */,
 				B2CC271A1B3FCA5C002D3A1F /* MCImageCache.m in Sources */,
+				06C8C6A71B6002C30012DD4E /* MCFeedBackViewController.m in Sources */,
 				B2CC26781B3F87AD002D3A1F /* main.m in Sources */,
 				B2CC27231B3FCB03002D3A1F /* UIFont+Design.m in Sources */,
 				B29DA22D1B4007B90020EC49 /* MCMainViewController.m in Sources */,
 				B2CC27141B3FC938002D3A1F /* MCAddition.m in Sources */,
+				06C8C6D21B609F9F0012DD4E /* MCPayItemButton.m in Sources */,
+				06C8C6A41B5FFB640012DD4E /* MCMineButton.m in Sources */,
 				B2CC272C1B3FCB7E002D3A1F /* MCPayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -732,6 +889,11 @@
 			baseConfigurationReference = D7126A3B56A9B055FA15B355 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wei fei (B6JTN8RR4Z)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MovieCircle/Depend/BaiduMap",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MovieCircle/MovieCircle-Prefix.pch";
 				INFOPLIST_FILE = MovieCircle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -745,6 +907,12 @@
 			baseConfigurationReference = A186EAECD311F0766414FD0A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wei fei (B6JTN8RR4Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wei fei (B6JTN8RR4Z)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MovieCircle/Depend/BaiduMap",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MovieCircle/MovieCircle-Prefix.pch";
 				INFOPLIST_FILE = MovieCircle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

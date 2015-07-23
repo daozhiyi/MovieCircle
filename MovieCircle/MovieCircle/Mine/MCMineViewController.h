@@ -8,6 +8,8 @@
 
 #import "MCBaseViewController.h"
 
-@interface MCMineViewController : MCBaseViewController
+@interface MCMineViewController : MCBaseViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic, retain) UITableView *mineTable;//我的表
 
 @end
