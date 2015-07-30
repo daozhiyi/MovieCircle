@@ -75,16 +75,22 @@ IMP_SINGLETON(MCConfiguration)
 
 #pragma mark - url host
 
-//登录
-- (NSString *)registHost
+//查询个人资料
+-(NSString *)searchUserInfo
 {
-    return [_httpHost stringByAppendingString:@"/app/security/regist"];
+    return [_httpHost stringByAppendingString:@"g=Portal&m=userGroup&a=queryUserInfo"];
 }
 
--(NSString *)openCitiesHost
+//保存个人资料
+-(NSString *)saveUserInfo
 {
-    return @"http://182.92.103.164:9000/yingshiquanApp/index.php?g=Portal&m=common&a=goodsSmallCategory";
-//    return [_httpHost stringByAppendingString:@"/app/task/open-cities"];
+    return [_httpHost stringByAppendingString:@"g=Portal&m=userGroup&a=updateUser"];
+}
+
+//注册
+-(NSString *)regist
+{
+    return [_httpHost stringByAppendingString:@"g=Portal&m=userGroup&a=addUser"];
 }
 
 @end

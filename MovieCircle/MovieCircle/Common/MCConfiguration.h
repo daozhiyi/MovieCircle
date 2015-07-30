@@ -18,7 +18,9 @@ DEF_SINGLETON(MCConfiguration)
 
 // host url
 @property (nonatomic, copy) NSString *httpHost;  //请求地址
-@property (strong, nonatomic) NSString *registHost; //post   注册
-@property (strong, nonatomic) NSString *openCitiesHost;
+
+@property (nonatomic, copy) NSString *searchUserInfo;//查询个人资料
+@property (nonatomic, copy) NSString *saveUserInfo;//保存个人资料
+@property (nonatomic, copy) NSString *regist;//注册
 
 @end

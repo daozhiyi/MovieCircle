@@ -17,10 +17,16 @@ DEF_SINGLETON(MCRequestManager)
 
 
 //========================= POST =========================
+//查询个人资料
+-(void)searchUserInfoWithUserID:(NSString *)userid
+                        success:(void (^)(NSString *data))success
+                        failure:(void (^)(NSError *error))failure;
 
-//城市列表
-- (void)getOpenCitiesSucess:(void (^)(NSString *data))success
-//                  exception:(void (^)(NSString *message))exception
-                    failure:(void (^)(NSError *error))failure;
+//保存个人资料
+-(void)saveUserInfoWithUserID:(NSString *)userid
+                user_nicename:(NSString *)user_nicename
+                    real_name:(NSString *)real_name
+                          sex:(NSString *)sex
+                     birthday:(NSString *)birthday;
 @end
 

@@ -12,8 +12,8 @@
 
 //http://182.92.103.164:9000/yingshiquanApp/index.php?g=Portal&m=common&a=goodsSmallCategory
 //debug url
-#define kDebugURL                               (@"http://api.bingex.com/urest")
-#define kReleaseURL                             (@"http://api.ishansong.com")
+#define kDebugURL                               (@"http://112.126.77.201/yingshiquanApp/index.php?")
+#define kReleaseURL                             (@"http://112.126.77.201/yingshiquanApp/index.php?")
 
 //width and height
 #define kDeviceHeight                           ([UIScreen mainScreen].bounds.size.height)

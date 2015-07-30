@@ -28,27 +28,21 @@ IMP_SINGLETON(MCRequestManager)
     return self;
 }
 
-/**
- *  注册例子
- *
- *  @param success   成功
- *  @param failure   请求失败
- */
 
-- (void)getOpenCitiesSucess:(void (^)(NSString *data))success
-//                  exception:(void (^)(NSString *message))exception
-                    failure:(void (^)(NSError *error))failure
+//查询个人资料
+-(void)searchUserInfoWithUserID:(NSString *)userid
+                        success:(void (^)(NSString *data))success
+                        failure:(void (^)(NSError *error))failure
 {
-    NSString *url = [[MCConfiguration sharedInstance] openCitiesHost];
-//    NSDictionary *params = @{@"apiVersion":@"v2",
-//                             @"version":@"2.1",
-//                             };
+    NSString *url = [[MCConfiguration sharedInstance] searchUserInfo];
+        NSDictionary *params = @{@"userid":userid,
+                                 };
     [self requestWithUrl:url
                   method:@"POST"
-                  params:nil
+                  params:params
                  success:success
-//               exception:exception
                  failure:failure];
+
 }
 
 
@@ -61,19 +55,6 @@ IMP_SINGLETON(MCRequestManager)
 //             exception:(void (^)(NSString *message))exception
                failure:(void (^)(NSError *error))failure
 {
-    //    __block NSMutableDictionary *paramDic = [[NSMutableDictionary alloc] init];
-    //    [paramDic safeSetObject:url forKey:kUMeng_networkUrl];
-    //    [paramDic safeSetObject:params forKey:kUMeng_networkParams];
-    
-    /**
-     *  请求header
-     */
-//    if (CheckValidString([MCConfiguration sharedInstance].userInfo.userToken)) {
-//        [_operationManager.requestSerializer setValue:[NSString stringWithFormat:@"Basic %@",[MCConfiguration sharedInstance].userInfo.userToken] forHTTPHeaderField:@"Authorization"];
-//    }
-//    else{
-//        [_operationManager.requestSerializer setValue:nil forHTTPHeaderField:@"Authorization"];
-//    }
     
     //post和get请求
     if ([method isEqualToString:@"GET"]) {

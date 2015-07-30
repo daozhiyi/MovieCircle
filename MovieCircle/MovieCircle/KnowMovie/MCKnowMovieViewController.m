@@ -23,7 +23,7 @@
     
     
     
-    //af封装
+//    //af封装
 //    [self testRequest];
     
     // Do any additional setup after loading the view.
@@ -149,18 +149,6 @@
 -(void)testRequest
 {
     
-    
-    [[MCRequestManager sharedInstance]getOpenCitiesSucess:^(NSString *data){
-        id parseData = nil;
-        if (CheckValidString(data)) {
-            parseData = [data objectFromJSONString];
-        }
-
-        
-    } failure:^(NSError *error){
-                                                    
-                                                    
-    }];
 }
 
 /*

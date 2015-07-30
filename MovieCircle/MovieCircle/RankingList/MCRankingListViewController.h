@@ -8,6 +8,9 @@
 
 #import "MCBaseViewController.h"
 
-@interface MCRankingListViewController : MCBaseViewController
+@interface MCRankingListViewController : MCBaseViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic, retain) UITableView *rankingListTable;//榜单表
+
 
 @end

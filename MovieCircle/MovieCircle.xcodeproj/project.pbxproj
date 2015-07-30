@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063FFAB41B64C72A007CCAD9 /* MCMyAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFAB31B64C72A007CCAD9 /* MCMyAssetsViewController.m */; };
+		063FFAB71B64C74F007CCAD9 /* MCMyRewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFAB61B64C74F007CCAD9 /* MCMyRewardViewController.m */; };
+		063FFABF1B64C7EE007CCAD9 /* MCMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFABE1B64C7EE007CCAD9 /* MCMyMessageViewController.m */; };
+		063FFAC21B64C7FE007CCAD9 /* MCMyClaimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFAC11B64C7FE007CCAD9 /* MCMyClaimViewController.m */; };
+		063FFAC51B64C833007CCAD9 /* MCMyGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFAC41B64C833007CCAD9 /* MCMyGroupViewController.m */; };
+		063FFAC81B64C88C007CCAD9 /* MCMyIdentityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFAC71B64C88C007CCAD9 /* MCMyIdentityViewController.m */; };
+		063FFACB1B64C8A1007CCAD9 /* MCMyActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFACA1B64C8A1007CCAD9 /* MCMyActivityViewController.m */; };
+		063FFACE1B64C8CC007CCAD9 /* MCMySettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFACD1B64C8CC007CCAD9 /* MCMySettingViewController.m */; };
+		063FFAD11B64CA86007CCAD9 /* MCMyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063FFAD01B64CA86007CCAD9 /* MCMyCollectionViewController.m */; };
 		06A801881B5EB76700F1F912 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A801861B5EB76700F1F912 /* BaiduMapAPI.framework */; };
 		06A801891B5EB76700F1F912 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 06A801871B5EB76700F1F912 /* mapapi.bundle */; };
 		06A8018B1B5EBB8300F1F912 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A8018A1B5EBB8300F1F912 /* CoreLocation.framework */; };
@@ -36,6 +45,7 @@
 		06C8C6CE1B608D7C0012DD4E /* payImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6C91B608D7C0012DD4E /* payImage1.png */; };
 		06C8C6CF1B608D7C0012DD4E /* payImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6CA1B608D7C0012DD4E /* payImage0.png */; };
 		06C8C6D21B609F9F0012DD4E /* MCPayItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C8C6D11B609F9F0012DD4E /* MCPayItemButton.m */; };
+		06C8C6D91B611E560012DD4E /* MCMyWorksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C8C6D81B611E560012DD4E /* MCMyWorksViewController.m */; };
 		9ACC6A30C56818218B6711AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0EA6DB871BF48394B4C421 /* libPods.a */; };
 		B241355A1B48CD88006398B0 /* MCTabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B24135591B48CD88006398B0 /* MCTabbarButton.m */; };
 		B241356B1B48D6B8006398B0 /* shiying_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B241355B1B48D6B7006398B0 /* shiying_selected@3x.png */; };
@@ -98,6 +108,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		063FFAB21B64C72A007CCAD9 /* MCMyAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMyAssetsViewController.h; sourceTree = "<group>"; };
+		063FFAB31B64C72A007CCAD9 /* MCMyAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMyAssetsViewController.m; sourceTree = "<group>"; };
+		063FFAB51B64C74F007CCAD9 /* MCMyRewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMyRewardViewController.h; sourceTree = "<group>"; };
+		063FFAB61B64C74F007CCAD9 /* MCMyRewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMyRewardViewController.m; sourceTree = "<group>"; };
+		063FFABD1B64C7EE007CCAD9 /* MCMyMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMyMessageViewController.h; sourceTree = "<group>"; };
+		063FFABE1B64C7EE007CCAD9 /* MCMyMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMyMessageViewController.m; sourceTree = "<group>"; };
+		063FFAC01B64C7FE007CCAD9 /* MCMyClaimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMyClaimViewController.h; sourceTree = "<group>"; };
+		063FFAC11B64C7FE007CCAD9 /* MCMyClaimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMyClaimViewController.m; sourceTree = "<group>"; };
+		063FFAC31B64C833007CCAD9 /* MCMyGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMyGroupViewController.h; sourceTree = "<group>"; };
+		063FFAC41B64C833007CCAD9 /* MCMyGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMyGroupViewController.m; sourceTree = "<group>"; };
+		063FFAC61B64C88C007CCAD9 /* MCMyIdentityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMyIdentityViewController.h; sourceTree = "<group>"; };
+		063FFAC71B64C88C007CCAD9 /* MCMyIdentityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMyIdentityViewController.m; sourceTree = "<group>"; };
+		063FFAC91B64C8A1007CCAD9 /* MCMyActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMyActivityViewController.h; sourceTree = "<group>"; };
+		063FFACA1B64C8A1007CCAD9 /* MCMyActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMyActivityViewController.m; sourceTree = "<group>"; };
+		063FFACC1B64C8CC007CCAD9 /* MCMySettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMySettingViewController.h; sourceTree = "<group>"; };
+		063FFACD1B64C8CC007CCAD9 /* MCMySettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMySettingViewController.m; sourceTree = "<group>"; };
+		063FFACF1B64CA86007CCAD9 /* MCMyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMyCollectionViewController.h; sourceTree = "<group>"; };
+		063FFAD01B64CA86007CCAD9 /* MCMyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMyCollectionViewController.m; sourceTree = "<group>"; };
 		06A801861B5EB76700F1F912 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
 		06A801871B5EB76700F1F912 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
 		06A8018A1B5EBB8300F1F912 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -130,6 +158,8 @@
 		06C8C6CA1B608D7C0012DD4E /* payImage0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payImage0.png; sourceTree = "<group>"; };
 		06C8C6D01B609F9F0012DD4E /* MCPayItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPayItemButton.h; sourceTree = "<group>"; };
 		06C8C6D11B609F9F0012DD4E /* MCPayItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPayItemButton.m; sourceTree = "<group>"; };
+		06C8C6D71B611E560012DD4E /* MCMyWorksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMyWorksViewController.h; sourceTree = "<group>"; };
+		06C8C6D81B611E560012DD4E /* MCMyWorksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMyWorksViewController.m; sourceTree = "<group>"; };
 		9C0EA6DB871BF48394B4C421 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A186EAECD311F0766414FD0A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B24135581B48CD88006398B0 /* MCTabbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTabbarButton.h; sourceTree = "<group>"; };
@@ -240,6 +270,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		063FFAB11B64C6DE007CCAD9 /* MyAssets */ = {
+			isa = PBXGroup;
+			children = (
+				063FFAB21B64C72A007CCAD9 /* MCMyAssetsViewController.h */,
+				063FFAB31B64C72A007CCAD9 /* MCMyAssetsViewController.m */,
+				063FFAB51B64C74F007CCAD9 /* MCMyRewardViewController.h */,
+				063FFAB61B64C74F007CCAD9 /* MCMyRewardViewController.m */,
+				063FFACF1B64CA86007CCAD9 /* MCMyCollectionViewController.h */,
+				063FFAD01B64CA86007CCAD9 /* MCMyCollectionViewController.m */,
+			);
+			name = MyAssets;
+			sourceTree = "<group>";
+		};
+		063FFABB1B64C778007CCAD9 /* MyClaim */ = {
+			isa = PBXGroup;
+			children = (
+				063FFAC01B64C7FE007CCAD9 /* MCMyClaimViewController.h */,
+				063FFAC11B64C7FE007CCAD9 /* MCMyClaimViewController.m */,
+				063FFAC61B64C88C007CCAD9 /* MCMyIdentityViewController.h */,
+				063FFAC71B64C88C007CCAD9 /* MCMyIdentityViewController.m */,
+				063FFAC91B64C8A1007CCAD9 /* MCMyActivityViewController.h */,
+				063FFACA1B64C8A1007CCAD9 /* MCMyActivityViewController.m */,
+			);
+			name = MyClaim;
+			sourceTree = "<group>";
+		};
+		063FFABC1B64C77C007CCAD9 /* MyMessage */ = {
+			isa = PBXGroup;
+			children = (
+				063FFABD1B64C7EE007CCAD9 /* MCMyMessageViewController.h */,
+				063FFABE1B64C7EE007CCAD9 /* MCMyMessageViewController.m */,
+				06C8C6D71B611E560012DD4E /* MCMyWorksViewController.h */,
+				06C8C6D81B611E560012DD4E /* MCMyWorksViewController.m */,
+				063FFAC31B64C833007CCAD9 /* MCMyGroupViewController.h */,
+				063FFAC41B64C833007CCAD9 /* MCMyGroupViewController.m */,
+			);
+			name = MyMessage;
+			sourceTree = "<group>";
+		};
 		06A801851B5EB76700F1F912 /* BaiduMap */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +362,13 @@
 				06C8C6CA1B608D7C0012DD4E /* payImage0.png */,
 			);
 			name = pay;
+			sourceTree = "<group>";
+		};
+		06E7194E1B61B54400932172 /* rankingList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = rankingList;
 			sourceTree = "<group>";
 		};
 		40350DB94457D4435397CBEC /* Pods */ = {
@@ -491,6 +567,7 @@
 		B2CC26ED1B3FC0F1002D3A1F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				06E7194E1B61B54400932172 /* rankingList */,
 				06C8C6C51B608D6C0012DD4E /* pay */,
 				06C8C6C21B608AF00012DD4E /* mine */,
 				06C8C6AD1B60887C0012DD4E /* nearby */,
@@ -541,12 +618,17 @@
 		B2CC26F21B3FC11C002D3A1F /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				063FFAB11B64C6DE007CCAD9 /* MyAssets */,
+				063FFABC1B64C77C007CCAD9 /* MyMessage */,
+				063FFABB1B64C778007CCAD9 /* MyClaim */,
 				B2CC27301B3FCBA8002D3A1F /* MCMineViewController.h */,
 				B2CC27311B3FCBA8002D3A1F /* MCMineViewController.m */,
 				06C8C6A21B5FFB640012DD4E /* MCMineButton.h */,
 				06C8C6A31B5FFB640012DD4E /* MCMineButton.m */,
 				06C8C6A51B6002C30012DD4E /* MCFeedBackViewController.h */,
 				06C8C6A61B6002C30012DD4E /* MCFeedBackViewController.m */,
+				063FFACC1B64C8CC007CCAD9 /* MCMySettingViewController.h */,
+				063FFACD1B64C8CC007CCAD9 /* MCMySettingViewController.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -737,6 +819,7 @@
 			files = (
 				B2CC27201B3FCACD002D3A1F /* MCNotificationCenter.m in Sources */,
 				B2CC267E1B3F87AD002D3A1F /* MCViewController.m in Sources */,
+				063FFAD11B64CA86007CCAD9 /* MCMyCollectionViewController.m in Sources */,
 				B2CC26F91B3FC709002D3A1F /* MCPersistence.m in Sources */,
 				B2CC27261B3FCB4F002D3A1F /* MCKnowMovieViewController.m in Sources */,
 				B2CC271D1B3FCA8F002D3A1F /* MCMultiDelegate.m in Sources */,
@@ -745,8 +828,10 @@
 				B2CC27171B3FC9E8002D3A1F /* MCUrlHandler.m in Sources */,
 				B2CC26FC1B3FC747002D3A1F /* MCUserInfo.m in Sources */,
 				B2CC27001B3FC7E0002D3A1F /* MCBaseViewController.m in Sources */,
+				063FFAC81B64C88C007CCAD9 /* MCMyIdentityViewController.m in Sources */,
 				B2CC26F61B3FC6DC002D3A1F /* MCModel.m in Sources */,
 				B2CC27111B3FC908002D3A1F /* MCTools.m in Sources */,
+				063FFAB71B64C74F007CCAD9 /* MCMyRewardViewController.m in Sources */,
 				B2CC270D1B3FC88D002D3A1F /* MCRequestManager.m in Sources */,
 				B2CC267B1B3F87AD002D3A1F /* MCAppDelegate.mm in Sources */,
 				B2CC270A1B3FC849002D3A1F /* MCConfiguration.m in Sources */,
@@ -754,13 +839,20 @@
 				B2CC27031B3FC807002D3A1F /* MCNavigationViewController.m in Sources */,
 				B2CC27071B3FC82A002D3A1F /* GCDMulticastDelegate.m in Sources */,
 				B241355A1B48CD88006398B0 /* MCTabbarButton.m in Sources */,
+				063FFAB41B64C72A007CCAD9 /* MCMyAssetsViewController.m in Sources */,
+				063FFAC21B64C7FE007CCAD9 /* MCMyClaimViewController.m in Sources */,
 				B2CC271A1B3FCA5C002D3A1F /* MCImageCache.m in Sources */,
+				06C8C6D91B611E560012DD4E /* MCMyWorksViewController.m in Sources */,
+				063FFAC51B64C833007CCAD9 /* MCMyGroupViewController.m in Sources */,
 				06C8C6A71B6002C30012DD4E /* MCFeedBackViewController.m in Sources */,
 				B2CC26781B3F87AD002D3A1F /* main.m in Sources */,
 				B2CC27231B3FCB03002D3A1F /* UIFont+Design.m in Sources */,
 				B29DA22D1B4007B90020EC49 /* MCMainViewController.m in Sources */,
 				B2CC27141B3FC938002D3A1F /* MCAddition.m in Sources */,
 				06C8C6D21B609F9F0012DD4E /* MCPayItemButton.m in Sources */,
+				063FFACB1B64C8A1007CCAD9 /* MCMyActivityViewController.m in Sources */,
+				063FFABF1B64C7EE007CCAD9 /* MCMyMessageViewController.m in Sources */,
+				063FFACE1B64C8CC007CCAD9 /* MCMySettingViewController.m in Sources */,
 				06C8C6A41B5FFB640012DD4E /* MCMineButton.m in Sources */,
 				B2CC272C1B3FCB7E002D3A1F /* MCPayViewController.m in Sources */,
 			);
@@ -889,25 +981,7 @@
 			baseConfigurationReference = D7126A3B56A9B055FA15B355 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: wei fei (B6JTN8RR4Z)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MovieCircle/Depend/BaiduMap",
-				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/MovieCircle/MovieCircle-Prefix.pch";
-				INFOPLIST_FILE = MovieCircle/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		B2CC26971B3F87AD002D3A1F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A186EAECD311F0766414FD0A /* Pods.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: wei fei (B6JTN8RR4Z)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wei fei (B6JTN8RR4Z)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -918,6 +992,27 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B2CC26971B3F87AD002D3A1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A186EAECD311F0766414FD0A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wei fei (B6JTN8RR4Z)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MovieCircle/Depend/BaiduMap",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MovieCircle/MovieCircle-Prefix.pch";
+				INFOPLIST_FILE = MovieCircle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
