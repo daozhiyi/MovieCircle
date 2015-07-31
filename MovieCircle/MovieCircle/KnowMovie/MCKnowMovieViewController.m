@@ -23,8 +23,8 @@
     
     
     
-//    //af封装
-//    [self testRequest];
+    //请求数据
+    [self testRequest];
     
     // Do any additional setup after loading the view.
 }
@@ -148,7 +148,24 @@
 
 -(void)testRequest
 {
+    __block MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = @"加载中";
     
+    [[MCRequestManager sharedInstance]goodsBigCategoryWithSuccess:^(id data) {
+        DLog(@"%@",data);
+        NSString *string = [data[0] valueForKey:@"id"];
+        DLog(@"%@",string);
+//        DLog(@"%@",[data objectFromJSONString]);//转为json
+        [hud hide:YES afterDelay:.5];
+    } failure:^(NSError *error) {
+        DLog(@"%@",error);
+        DLog(@"%@",[error description]);
+        
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = @"加载失败，请重试";
+        [hud hide:YES afterDelay:1];
+    }];
 }
 
 /*

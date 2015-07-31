@@ -17,9 +17,13 @@ DEF_SINGLETON(MCRequestManager)
 
 
 //========================= POST =========================
+//商品大分类接口
+-(void)goodsBigCategoryWithSuccess:(void (^)(id data))success
+                failure:(void (^)(NSError *error))failure;
+
 //查询个人资料
 -(void)searchUserInfoWithUserID:(NSString *)userid
-                        success:(void (^)(NSString *data))success
+                        success:(void (^)(id data))success
                         failure:(void (^)(NSError *error))failure;
 
 //保存个人资料
