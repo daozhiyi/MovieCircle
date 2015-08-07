@@ -24,6 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return self.topViewController.preferredStatusBarStyle;
+}
+
 
 //push的时候判断到子控制器的数量。当大于零时隐藏BottomBar 也就是UITabBarController 的tababar
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated

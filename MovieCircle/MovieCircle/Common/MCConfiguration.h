@@ -22,6 +22,8 @@ DEF_SINGLETON(MCConfiguration)
 
 
 @property (nonatomic, copy) NSString *bigCategory;//大分类
+@property (nonatomic, copy) NSString *smallCatetory;//小分类
+@property (nonatomic, copy) NSString *goodsInfoList;
 
 @property (nonatomic, copy) NSString *searchUserInfo;//查询个人资料
 @property (nonatomic, copy) NSString *saveUserInfo;//保存个人资料

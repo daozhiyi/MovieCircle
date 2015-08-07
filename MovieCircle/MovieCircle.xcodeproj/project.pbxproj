@@ -70,8 +70,6 @@
 		B29DA22D1B4007B90020EC49 /* MCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29DA22C1B4007B90020EC49 /* MCMainViewController.m */; };
 		B2CC26781B3F87AD002D3A1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CC26771B3F87AD002D3A1F /* main.m */; };
 		B2CC267B1B3F87AD002D3A1F /* MCAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B2CC267A1B3F87AD002D3A1F /* MCAppDelegate.mm */; };
-		B2CC267E1B3F87AD002D3A1F /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CC267D1B3F87AD002D3A1F /* MCViewController.m */; };
-		B2CC26811B3F87AD002D3A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CC267F1B3F87AD002D3A1F /* Main.storyboard */; };
 		B2CC26831B3F87AD002D3A1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CC26821B3F87AD002D3A1F /* Images.xcassets */; };
 		B2CC26861B3F87AD002D3A1F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CC26841B3F87AD002D3A1F /* LaunchScreen.xib */; };
 		B2CC26921B3F87AD002D3A1F /* MovieCircleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CC26911B3F87AD002D3A1F /* MovieCircleTests.m */; };
@@ -95,6 +93,7 @@
 		B2CC272C1B3FCB7E002D3A1F /* MCPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CC272B1B3FCB7E002D3A1F /* MCPayViewController.m */; };
 		B2CC272F1B3FCB95002D3A1F /* MCNearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CC272E1B3FCB95002D3A1F /* MCNearbyViewController.m */; };
 		B2CC27321B3FCBA8002D3A1F /* MCMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CC27311B3FCBA8002D3A1F /* MCMineViewController.m */; };
+		C06684F31B70BD2600C9C6DA /* MCKnowMovieData.m in Sources */ = {isa = PBXBuildFile; fileRef = C06684F21B70BD2600C9C6DA /* MCKnowMovieData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,9 +189,6 @@
 		B2CC26771B3F87AD002D3A1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2CC26791B3F87AD002D3A1F /* MCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
 		B2CC267A1B3F87AD002D3A1F /* MCAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MCAppDelegate.mm; sourceTree = "<group>"; };
-		B2CC267C1B3F87AD002D3A1F /* MCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCViewController.h; sourceTree = "<group>"; };
-		B2CC267D1B3F87AD002D3A1F /* MCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCViewController.m; sourceTree = "<group>"; };
-		B2CC26801B3F87AD002D3A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2CC26821B3F87AD002D3A1F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B2CC26851B3F87AD002D3A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B2CC268B1B3F87AD002D3A1F /* MovieCircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieCircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +237,8 @@
 		B2CC272E1B3FCB95002D3A1F /* MCNearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNearbyViewController.m; sourceTree = "<group>"; };
 		B2CC27301B3FCBA8002D3A1F /* MCMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMineViewController.h; sourceTree = "<group>"; };
 		B2CC27311B3FCBA8002D3A1F /* MCMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMineViewController.m; sourceTree = "<group>"; };
+		C06684F11B70BD2600C9C6DA /* MCKnowMovieData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCKnowMovieData.h; sourceTree = "<group>"; };
+		C06684F21B70BD2600C9C6DA /* MCKnowMovieData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCKnowMovieData.m; sourceTree = "<group>"; };
 		D7126A3B56A9B055FA15B355 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -456,9 +454,6 @@
 				B2CC26E81B3FC0A4002D3A1F /* Model */,
 				B2CC26791B3F87AD002D3A1F /* MCAppDelegate.h */,
 				B2CC267A1B3F87AD002D3A1F /* MCAppDelegate.mm */,
-				B2CC267C1B3F87AD002D3A1F /* MCViewController.h */,
-				B2CC267D1B3F87AD002D3A1F /* MCViewController.m */,
-				B2CC267F1B3F87AD002D3A1F /* Main.storyboard */,
 				B2CC26821B3F87AD002D3A1F /* Images.xcassets */,
 				B2CC26841B3F87AD002D3A1F /* LaunchScreen.xib */,
 				B2CC26751B3F87AD002D3A1F /* Supporting Files */,
@@ -580,6 +575,7 @@
 		B2CC26EE1B3FC0F9002D3A1F /* KnowMovie */ = {
 			isa = PBXGroup;
 			children = (
+				C06684F01B70BCDC00C9C6DA /* Model */,
 				B2CC27241B3FCB4F002D3A1F /* MCKnowMovieViewController.h */,
 				B2CC27251B3FCB4F002D3A1F /* MCKnowMovieViewController.m */,
 			);
@@ -642,6 +638,15 @@
 			path = GCDMulticastDelegate;
 			sourceTree = "<group>";
 		};
+		C06684F01B70BCDC00C9C6DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C06684F11B70BD2600C9C6DA /* MCKnowMovieData.h */,
+				C06684F21B70BD2600C9C6DA /* MCKnowMovieData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -694,10 +699,11 @@
 				TargetAttributes = {
 					B2CC26711B3F87AD002D3A1F = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = M4QZ3Y5DZP;
+						DevelopmentTeam = A8KJAS66EN;
 					};
 					B2CC268A1B3F87AD002D3A1F = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = LLF44772HV;
 						TestTargetID = B2CC26711B3F87AD002D3A1F;
 					};
 				};
@@ -737,7 +743,6 @@
 				06C8C6AC1B6087E70012DD4E /* yingshi2.png in Resources */,
 				B24135771B48D6B8006398B0 /* fujin_normal@2x.png in Resources */,
 				B241356C1B48D6B8006398B0 /* shiying_selected@2x.png in Resources */,
-				B2CC26811B3F87AD002D3A1F /* Main.storyboard in Resources */,
 				B24135731B48D6B8006398B0 /* wo_selected@2x.png in Resources */,
 				B2CC26861B3F87AD002D3A1F /* LaunchScreen.xib in Resources */,
 				B24135751B48D6B8006398B0 /* fujin_selected@2x.png in Resources */,
@@ -818,7 +823,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2CC27201B3FCACD002D3A1F /* MCNotificationCenter.m in Sources */,
-				B2CC267E1B3F87AD002D3A1F /* MCViewController.m in Sources */,
 				063FFAD11B64CA86007CCAD9 /* MCMyCollectionViewController.m in Sources */,
 				B2CC26F91B3FC709002D3A1F /* MCPersistence.m in Sources */,
 				B2CC27261B3FCB4F002D3A1F /* MCKnowMovieViewController.m in Sources */,
@@ -837,6 +841,7 @@
 				B2CC270A1B3FC849002D3A1F /* MCConfiguration.m in Sources */,
 				B2CC27291B3FCB6C002D3A1F /* MCRankingListViewController.m in Sources */,
 				B2CC27031B3FC807002D3A1F /* MCNavigationViewController.m in Sources */,
+				C06684F31B70BD2600C9C6DA /* MCKnowMovieData.m in Sources */,
 				B2CC27071B3FC82A002D3A1F /* GCDMulticastDelegate.m in Sources */,
 				B241355A1B48CD88006398B0 /* MCTabbarButton.m in Sources */,
 				063FFAB41B64C72A007CCAD9 /* MCMyAssetsViewController.m in Sources */,
@@ -877,14 +882,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B2CC267F1B3F87AD002D3A1F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2CC26801B3F87AD002D3A1F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B2CC26841B3F87AD002D3A1F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -982,7 +979,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wei fei (B6JTN8RR4Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MovieCircle/Depend/BaiduMap",
@@ -1002,7 +999,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wei fei (B6JTN8RR4Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MovieCircle/Depend/BaiduMap",
@@ -1020,6 +1017,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1031,6 +1030,7 @@
 				INFOPLIST_FILE = MovieCircleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieCircle.app/MovieCircle";
 			};
 			name = Debug;
@@ -1039,6 +1039,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1046,6 +1048,7 @@
 				INFOPLIST_FILE = MovieCircleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieCircle.app/MovieCircle";
 			};
 			name = Release;

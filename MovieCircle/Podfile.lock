@@ -20,8 +20,13 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AMScrollingNavbar (1.5.1)
+  - HTHorizontalSelectionList (0.6.0)
   - JSONKit (1.4)
+  - Masonry (0.6.2)
   - MBProgressHUD (0.9.1)
+  - MJExtension (2.5.3)
+  - MJRefresh (2.3.2)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
@@ -29,16 +34,26 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - AMScrollingNavbar
+  - HTHorizontalSelectionList
   - JSONKit
+  - Masonry
   - MBProgressHUD
+  - MJExtension
+  - MJRefresh
   - SDWebImage
   - SVPullToRefresh
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AMScrollingNavbar: 767ed2db60d927a809bddff5d01b739b7020b12b
+  HTHorizontalSelectionList: 5438150178f6446deb3432ed84a7c469ba9cabb8
   JSONKit: 5b69e804ea54d99293eed0fd2ce596c5703fefb0
+  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MJExtension: d636ed42d1af44cba81106ae7831cccb66906eb7
+  MJRefresh: 0f6f5e8387970607c26080b44058b229a23065d7
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.37.2

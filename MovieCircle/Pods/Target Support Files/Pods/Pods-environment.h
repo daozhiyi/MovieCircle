@@ -48,6 +48,18 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 4
 
+// AMScrollingNavbar
+#define COCOAPODS_POD_AVAILABLE_AMScrollingNavbar
+#define COCOAPODS_VERSION_MAJOR_AMScrollingNavbar 1
+#define COCOAPODS_VERSION_MINOR_AMScrollingNavbar 5
+#define COCOAPODS_VERSION_PATCH_AMScrollingNavbar 1
+
+// HTHorizontalSelectionList
+#define COCOAPODS_POD_AVAILABLE_HTHorizontalSelectionList
+#define COCOAPODS_VERSION_MAJOR_HTHorizontalSelectionList 0
+#define COCOAPODS_VERSION_MINOR_HTHorizontalSelectionList 6
+#define COCOAPODS_VERSION_PATCH_HTHorizontalSelectionList 0
+
 // JSONKit
 #define COCOAPODS_POD_AVAILABLE_JSONKit
 #define COCOAPODS_VERSION_MAJOR_JSONKit 1
@@ -59,6 +71,24 @@
 #define COCOAPODS_VERSION_MAJOR_MBProgressHUD 0
 #define COCOAPODS_VERSION_MINOR_MBProgressHUD 9
 #define COCOAPODS_VERSION_PATCH_MBProgressHUD 1
+
+// MJExtension
+#define COCOAPODS_POD_AVAILABLE_MJExtension
+#define COCOAPODS_VERSION_MAJOR_MJExtension 2
+#define COCOAPODS_VERSION_MINOR_MJExtension 5
+#define COCOAPODS_VERSION_PATCH_MJExtension 3
+
+// MJRefresh
+#define COCOAPODS_POD_AVAILABLE_MJRefresh
+#define COCOAPODS_VERSION_MAJOR_MJRefresh 2
+#define COCOAPODS_VERSION_MINOR_MJRefresh 3
+#define COCOAPODS_VERSION_PATCH_MJRefresh 2
+
+// Masonry
+#define COCOAPODS_POD_AVAILABLE_Masonry
+#define COCOAPODS_VERSION_MAJOR_Masonry 0
+#define COCOAPODS_VERSION_MINOR_Masonry 6
+#define COCOAPODS_VERSION_PATCH_Masonry 2
 
 // SDWebImage
 #define COCOAPODS_POD_AVAILABLE_SDWebImage
