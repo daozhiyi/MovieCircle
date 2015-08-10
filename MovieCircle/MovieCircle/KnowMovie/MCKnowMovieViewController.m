@@ -12,6 +12,8 @@
 #import "UIImageView+WebCache.h"
 #import "MJRefresh.h"
 
+#import "MCCertifiedViewController.h"
+
 @interface MCKnowMovieViewController ()<HTHorizontalSelectionListDataSource,HTHorizontalSelectionListDelegate>
 
 @property (strong, nonatomic) UIView *topContainer;
@@ -43,8 +45,7 @@
 #pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.hidden = YES;
-    [self setNeedsStatusBarAppearanceUpdate];
+    self.title = @"首页";
 
     [self.view addSubview:self.statusV];
     [self.view addSubview:self.topSelectionList];
@@ -56,6 +57,12 @@
     
 
     [self initRequest];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
 }
 
 
@@ -81,12 +88,6 @@
         }];
     }
     [super updateViewConstraints];
-}
-
-#pragma mark - 改变状态栏颜色
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
 }
 
 #pragma mark - 下拉刷新集成
@@ -148,6 +149,7 @@
         [self.secSelectionList reloadData];
         if ([self.secTitleList count]) {
             self.selectedSmallCategoryName = [self.secTitleList[0] valueForKey:@"name"];
+            self.secSelectionList.selectedButtonIndex = 0;
         }
         [hud hide:YES afterDelay:.5];
         [self setupRefreshView];
@@ -187,9 +189,6 @@
     }];
 }
 
-//http://182.92.222.50/index.php?s=App/get_list&limit=6
-//http://182.92.103.164:9000/yingshiquanApp/index.php?g=Portal&m=common&a=goodsSmallCategory
-
 #pragma mark - UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -209,6 +208,17 @@
         [movieGoodsImage sd_setImageWithURL:[NSURL URLWithString:bigImageUrl] placeholderImage:[UIImage imageNamed:@"yingshi1"]];
         [cell.contentView addSubview:movieGoodsImage];
         
+        UIImage *renzhengImg = nil;
+        if ([((MCKnowMovieData *)self.goodInfoList[indexPath.row]).status isEqualToString:@"1"]) {
+            renzhengImg = [UIImage imageNamed:@"renzheng"];
+        } else {
+            renzhengImg = [UIImage imageNamed:@"weirenzheng"];
+        }
+        
+        UIImageView *renzhengPic = [[UIImageView alloc]initWithFrame:CGRectMake(10, 15, renzhengImg.size.width, renzhengImg.size.height)];
+        renzhengPic.image = renzhengImg;
+        [cell.contentView addSubview:renzhengPic];
+        
         //同款
         UIImageView *similarImage = [[UIImageView alloc]initWithFrame:CGRectMake(30, 250 - 100, 70, 90)];
 
@@ -216,10 +226,20 @@
         [similarImage sd_setImageWithURL:[NSURL URLWithString:smallImageUrl] placeholderImage:[UIImage imageNamed:@"yingshi2"]];
         [cell.contentView addSubview:similarImage];
         
+        UIImage *nameImg = [UIImage imageNamed:@"yingpian"];
+        UIImageView *namePic = [[UIImageView alloc]initWithFrame:CGRectMake(kDeviceWidth * 0.5 - nameImg.size.width - 10, movieGoodsImage.bottom + 10, nameImg.size.width, nameImg.size.height)];
+        namePic.image = nameImg;
+        [cell.contentView addSubview:namePic];
+        
         //电影名字
-        UILabel *movieName = [[UILabel alloc]initWithFrame:CGRectMake(kDeviceWidth/2, movieGoodsImage.bottom, kDeviceWidth/2, 30)];
+        UILabel *movieName = [[UILabel alloc]initWithFrame:CGRectMake(kDeviceWidth * 0.5, movieGoodsImage.bottom + 10, kDeviceWidth/2, 30)];
         movieName.text = ((MCKnowMovieData *)self.goodInfoList[indexPath.row]).goodsname;
         [cell.contentView addSubview:movieName];
+        
+        UIImage *desImg = [UIImage imageNamed:@"neirong"];
+        UIImageView *desPic = [[UIImageView alloc]initWithFrame:CGRectMake(movieName.left - nameImg.size.width - 10, movieName.bottom, desImg.size.width, desImg.size.height)];
+        desPic.image = desImg;
+        [cell.contentView addSubview:desPic];
         
         //同款描述
         UILabel *similarLabel = [[UILabel alloc]initWithFrame:CGRectMake(movieName.left, movieName.bottom, movieName.width, movieName.height)];
@@ -232,11 +252,11 @@
 }
 
 #pragma mark - UITableViewDelegate
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 250;
+    MCCertifiedViewController *certifiedVC = [[MCCertifiedViewController alloc]init];
+    [self.navigationController pushViewController:certifiedVC animated:YES];
 }
-
 
 
 #pragma mark - HTHorizontalSelectionListDataSource
@@ -265,7 +285,7 @@
     [self.goodInfoList removeAllObjects];
     
     if (selectionList.tag == 1) {
-        NSLog(@"%@",self.topTitleList[index]);
+//        NSLog(@"%@",self.topTitleList[index]);
         self.selectedBigCategoryId = [self.topTitleList[index] valueForKey:@"id"];
         self.selectedBigCategoryName = [self.topTitleList[index] valueForKey:@"name"];
         [self initSmallCategory:[self hudInit]];
@@ -293,6 +313,7 @@
         _knowMovieTable = [[UITableView alloc]init];
         _knowMovieTable.dataSource = self;
         _knowMovieTable.delegate = self;
+        _knowMovieTable.rowHeight = 250;
     }
     return _knowMovieTable;
 }
@@ -377,7 +398,7 @@
 - (NSInteger)pageCount
 {
     if (!_pageCount) {
-        _pageCount = 1;
+        _pageCount = 10;
     }
     return _pageCount;
 }
