@@ -13,8 +13,13 @@
 #import "MJRefresh.h"
 
 #import "MCCertifiedViewController.h"
+#import "MCUnCertifiedViewController.h"
 
-@interface MCKnowMovieViewController ()<HTHorizontalSelectionListDataSource,HTHorizontalSelectionListDelegate>
+@interface MCKnowMovieViewController ()<
+HTHorizontalSelectionListDataSource,
+HTHorizontalSelectionListDelegate,
+UIGestureRecognizerDelegate
+>
 
 @property (strong, nonatomic) UIView *topContainer;
 @property (strong, nonatomic) UITableView *knowMovieTable;//识影表
@@ -38,6 +43,8 @@
 
 @property (assign, nonatomic) BOOL didSetupConstraints;
 
+@property (strong, nonatomic) UIPanGestureRecognizer *panGesture;//滑动手势用于头部的显示和隐藏
+
 @end
 
 @implementation MCKnowMovieViewController
@@ -46,11 +53,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"首页";
-
-    [self.view addSubview:self.statusV];
-    [self.view addSubview:self.topSelectionList];
+    [self.topContainer addSubview:self.statusV];
+    [self.topContainer addSubview:self.topSelectionList];
     
-    [self.view addSubview:self.secSelectionList];
+    [self.topContainer addSubview:self.secSelectionList];
+    [self.view addSubview:self.topContainer];
     [self.view addSubview:self.knowMovieTable];
     
     [self.view setNeedsUpdateConstraints];
@@ -70,18 +77,8 @@
 {
     if (!self.didSetupConstraints) {
         WS(ws);
-        
-        [self.secSelectionList mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(ws.topSelectionList.mas_bottom);
-            make.leading.equalTo(ws.view);
-            make.trailing.equalTo(ws.view);
-            make.height.equalTo(@40);
-        }];
-        
-        
-        
         [self.knowMovieTable mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(ws.secSelectionList.mas_bottom);
+            make.top.equalTo(ws.topContainer.mas_bottom);
             make.leading.equalTo(ws.view);
             make.trailing.equalTo(ws.view);
             make.bottom.equalTo(ws.view);
@@ -189,6 +186,14 @@
     }];
 }
 
+#pragma mark - 手势处理
+- (void)handlePan:(UIPanGestureRecognizer *)gesture
+{
+    CGPoint tranlation = [gesture translationInView:self.view];
+    DLog(@"%f",tranlation.y);
+//    DLog(@"%f",tranlation.y);
+}
+
 #pragma mark - UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -254,10 +259,11 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MCCertifiedViewController *certifiedVC = [[MCCertifiedViewController alloc]init];
-    [self.navigationController pushViewController:certifiedVC animated:YES];
+//    MCCertifiedViewController *certifiedVC = [[MCCertifiedViewController alloc]init];
+//    [self.navigationController pushViewController:certifiedVC animated:YES];
+    MCUnCertifiedViewController *unCertifiedVC = [[MCUnCertifiedViewController alloc]init];
+    [self.navigationController pushViewController:unCertifiedVC animated:YES];
 }
-
 
 #pragma mark - HTHorizontalSelectionListDataSource
 - (NSInteger)numberOfItemsInSelectionList:(HTHorizontalSelectionList *)selectionList
@@ -285,7 +291,6 @@
     [self.goodInfoList removeAllObjects];
     
     if (selectionList.tag == 1) {
-//        NSLog(@"%@",self.topTitleList[index]);
         self.selectedBigCategoryId = [self.topTitleList[index] valueForKey:@"id"];
         self.selectedBigCategoryName = [self.topTitleList[index] valueForKey:@"name"];
         [self initSmallCategory:[self hudInit]];
@@ -302,7 +307,7 @@
 - (UIView *)topContainer
 {
     if (!_topContainer) {
-        _topContainer = [[UIView alloc]init];
+        _topContainer = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kDeviceWidth, 104)];
     }
     return _topContainer;
 }
@@ -314,6 +319,7 @@
         _knowMovieTable.dataSource = self;
         _knowMovieTable.delegate = self;
         _knowMovieTable.rowHeight = 250;
+        [_knowMovieTable addGestureRecognizer:self.panGesture];
     }
     return _knowMovieTable;
 }
@@ -403,4 +409,14 @@
     return _pageCount;
 }
 
+
+- (UIPanGestureRecognizer *)panGesture
+{
+    if (!_panGesture) {
+        _panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePan:)];
+        [_panGesture setMaximumNumberOfTouches:1];
+        _panGesture.delegate = self;
+    }
+    return _panGesture;
+}
 @end

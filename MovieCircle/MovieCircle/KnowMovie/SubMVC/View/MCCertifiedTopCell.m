@@ -9,7 +9,7 @@
 #import "MCCertifiedTopCell.h"
 
 @interface MCCertifiedTopCell ()
-@property (weak, nonatomic) IBOutlet UIImageView *imgVTop;
+
 @property (weak, nonatomic) IBOutlet UILabel *lblName;
 @property (weak, nonatomic) IBOutlet UILabel *lblRoleName;
 @property (weak, nonatomic) IBOutlet UILabel *lblTime;

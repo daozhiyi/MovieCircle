@@ -23,6 +23,9 @@
 @property (strong, nonatomic) UITableView *cusTableView;
 @property (assign, nonatomic) BOOL didSetupConstraints;
 
+@property (strong, nonatomic) MCCertifiedTopCell *topCell;
+@property (assign, nonatomic) CGFloat imgHeight;
+
 @end
 
 @implementation MCCertifiedViewController
@@ -72,14 +75,15 @@
         case 0:
         {
             UINib *registerNib = [UINib nibWithNibName:CERTIFIED_TOP_CELLIDENTIFY bundle:nil];
-            [_cusTableView registerNib:registerNib forCellReuseIdentifier:CERTIFIED_TOP_CELLIDENTIFY];
-            cell = [tableView dequeueReusableCellWithIdentifier:CERTIFIED_TOP_CELLIDENTIFY forIndexPath:indexPath];
+            [tableView registerNib:registerNib forCellReuseIdentifier:CERTIFIED_TOP_CELLIDENTIFY];
+            self.topCell = [tableView dequeueReusableCellWithIdentifier:CERTIFIED_TOP_CELLIDENTIFY forIndexPath:indexPath];
+            cell = self.topCell;
         }
             break;
         case 1:
         {
             UINib *registerNib = [UINib nibWithNibName:CERTIFIED_SEC_CELLIDENTIFY bundle:nil];
-            [_cusTableView registerNib:registerNib forCellReuseIdentifier:CERTIFIED_SEC_CELLIDENTIFY];
+            [tableView registerNib:registerNib forCellReuseIdentifier:CERTIFIED_SEC_CELLIDENTIFY];
             MCCertifiedSecCell *secCell = [tableView dequeueReusableCellWithIdentifier:CERTIFIED_SEC_CELLIDENTIFY forIndexPath:indexPath];
             secCell.delegate = self;
             cell = secCell;
@@ -88,7 +92,7 @@
         case 2:
         {
             UINib *registerNib = [UINib nibWithNibName:CERTIFIED_THREE_CELLIDENTIFY bundle:nil];
-            [_cusTableView registerNib:registerNib forCellReuseIdentifier:CERTIFIED_THREE_CELLIDENTIFY];
+            [tableView registerNib:registerNib forCellReuseIdentifier:CERTIFIED_THREE_CELLIDENTIFY];
             cell = [tableView dequeueReusableCellWithIdentifier:CERTIFIED_THREE_CELLIDENTIFY forIndexPath:indexPath];
         }
             break;
@@ -105,7 +109,7 @@
 {
     switch (indexPath.section) {
         case 0:
-            return 215;
+            return kDeviceWidth * 0.5 + 55;
             break;
         case 1:
             return 125;
@@ -132,6 +136,16 @@
     UIView *cusFootV = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kDeviceWidth, 10)];
     cusFootV.backgroundColor = [UIColor lightGrayColor];
     return cusFootV;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat statusHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+    CGFloat navHeight = self.navigationController.navigationBar.frame.size.height;
+    NSLog(@"%f",navHeight + statusHeight + scrollView.contentOffset.y);
+    if (scrollView.contentOffset.y <= -(navHeight + statusHeight)) {
+        self.topCell.imgVTop.frame = CGRectMake((navHeight + statusHeight + scrollView.contentOffset.y )* 0.5, navHeight + statusHeight + scrollView.contentOffset.y, kDeviceWidth - (scrollView.contentOffset.y + navHeight + statusHeight) , kDeviceWidth * 0.5 - (scrollView.contentOffset.y + navHeight + statusHeight) );
+    }
 }
 
 #pragma mark - MCCertifiedSecCellDelegate

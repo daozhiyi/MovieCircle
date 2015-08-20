@@ -57,7 +57,6 @@
     
     //识影
     MCNavigationViewController *knowNav = [[MCNavigationViewController alloc]initWithRootViewController:knowMovie];
-    knowNav.navigationBar.frame = CGRectMake(0, 20, kDeviceWidth, 84);
     //榜单
     MCNavigationViewController *rankingListNav = [[MCNavigationViewController alloc]initWithRootViewController:rankingList];
     //购买

@@ -11,6 +11,7 @@
 
 @interface MCCertifiedTopCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *imgVTop;
 @property (strong, nonatomic) MCKnowMovieData *topData;
 
 @end

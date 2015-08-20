@@ -36,6 +36,7 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFE-OL-bQ2">
                         <rect key="frame" x="244" y="40" width="56" height="20"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="sFE-OL-bQ2" secondAttribute="height" multiplier="14:5" id="AUm-of-X1Z"/>
                             <constraint firstAttribute="width" constant="56" id="pf3-Np-gzw"/>
