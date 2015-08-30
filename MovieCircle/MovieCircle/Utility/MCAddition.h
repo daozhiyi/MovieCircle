@@ -18,6 +18,7 @@
 - (BOOL)containsString:(NSString *)string;
 - (NSString *)urlencode;
 - (NSString *)urldecode;
+- (NSString *)imageUrlencode;
 - (NSString *)md5;
 @end
 

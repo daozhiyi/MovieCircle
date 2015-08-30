@@ -10,8 +10,8 @@
 
 @interface MCModel : NSObject<NSCoding>
 
-@property (strong, nonatomic) NSString *idStr;
-@property (strong, nonatomic) NSString *cityStr;
+//@property (strong, nonatomic) NSString *idStr;
+//@property (strong, nonatomic) NSString *cityStr;
 - (void)parseModelFrom:(id)data;
 
 

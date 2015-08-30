@@ -14,7 +14,8 @@
 
 @implementation MCBaseViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     if (iOS7) {
@@ -40,12 +41,10 @@
 
 /*
 #pragma mark - Navigation
+=======
+>>>>>>> 30f0aa165ee0d9cacf69cb1fa54a3e1ff4d33ed3
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    self.view.backgroundColor = [UIColor whiteColor];
 }
-*/
 
 @end

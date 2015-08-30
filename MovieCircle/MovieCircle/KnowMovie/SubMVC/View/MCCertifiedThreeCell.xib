@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MCCertifiedThreeCell" id="KGk-i7-Jjw" customClass="MCCertifiedThreeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yingshi2.png" translatesAutoresizingMaskIntoConstraints="NO" id="0R3-Dt-Bps">
+                        <rect key="frame" x="5" y="13" width="55" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0R3-Dt-Bps" secondAttribute="height" multiplier="1.5:2" id="f66-M3-chW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿尼玛" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="429-cg-eQd">
+                        <rect key="frame" x="68" y="23" width="51" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015夏季新款 男士T恤" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQ6-cU-LE7">
+                        <rect key="frame" x="68" y="54" width="162" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFE-OL-bQ2">
+                        <rect key="frame" x="244" y="40" width="56" height="20"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="sFE-OL-bQ2" secondAttribute="height" multiplier="14:5" id="AUm-of-X1Z"/>
+                            <constraint firstAttribute="width" constant="56" id="pf3-Np-gzw"/>
+                        </constraints>
+                        <state key="normal" title="￥286">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pQ6-cU-LE7" firstAttribute="top" secondItem="429-cg-eQd" secondAttribute="bottom" constant="10" id="6Hc-25-DvE"/>
+                    <constraint firstItem="429-cg-eQd" firstAttribute="leading" secondItem="0R3-Dt-Bps" secondAttribute="trailing" constant="8" id="Anb-lP-lUf"/>
+                    <constraint firstItem="0R3-Dt-Bps" firstAttribute="top" secondItem="429-cg-eQd" secondAttribute="top" constant="-10" id="D48-tU-i4O"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0R3-Dt-Bps" secondAttribute="bottom" constant="5" id="OmO-mD-j2Y"/>
+                    <constraint firstItem="pQ6-cU-LE7" firstAttribute="leading" secondItem="429-cg-eQd" secondAttribute="leading" id="OqU-x2-Mhc"/>
+                    <constraint firstAttribute="trailing" secondItem="sFE-OL-bQ2" secondAttribute="trailing" constant="20" id="PiU-0Y-ugl"/>
+                    <constraint firstItem="0R3-Dt-Bps" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Sg1-cX-8LT"/>
+                    <constraint firstItem="sFE-OL-bQ2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pQ6-cU-LE7" secondAttribute="trailing" constant="3" id="TAX-NY-k9R"/>
+                    <constraint firstAttribute="centerY" secondItem="sFE-OL-bQ2" secondAttribute="centerY" id="YyZ-ab-kfm"/>
+                    <constraint firstItem="0R3-Dt-Bps" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="a0b-ss-sTk"/>
+                    <constraint firstItem="pQ6-cU-LE7" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0R3-Dt-Bps" secondAttribute="bottom" constant="-13" id="qjQ-vl-r9I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnPrice" destination="sFE-OL-bQ2" id="AWk-gv-BsI"/>
+                <outlet property="imgVPic" destination="0R3-Dt-Bps" id="dpt-08-EIo"/>
+                <outlet property="lblDes" destination="pQ6-cU-LE7" id="66K-6G-xub"/>
+                <outlet property="lblName" destination="429-cg-eQd" id="bL2-Tl-Be6"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yingshi2.png" width="138" height="159"/>
+    </resources>
+</document>

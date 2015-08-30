@@ -17,9 +17,33 @@ DEF_SINGLETON(MCRequestManager)
 
 
 //========================= POST =========================
-//商品大分类接口
+/**
+ *  商品大分类（识影）
+ *
+ */
 -(void)goodsBigCategoryWithSuccess:(void (^)(id data))success
                 failure:(void (^)(NSError *error))failure;
+/**
+ *  商品小分类（识影）
+ *
+ */
+- (void)goodsSmallCategoryWithBigCategoryId:(NSString *)bigCategoryId
+                                    success:(void (^)(id data))success
+                                    failure:(void (^)(NSError *error))failure;
+/**
+ *  获取商品列表
+ *
+ *  @param bigCategoryName   大分类名称
+ *  @param smallCategoryName 小分类名称
+ *  @param success           成功回调
+ *  @param failure           失败回调
+ */
+- (void)achieveGoodListByBigCategoryName:(NSString *)bigCategoryName
+                       smallCategoryName:(NSString *)smallCategoryName
+                                    page:(NSInteger)page
+                               pageCount:(NSInteger)pageCount
+                                 success:(void (^)(id data))success
+                                 failure:(void (^)(NSError *error))failure;
 
 //查询个人资料
 -(void)searchUserInfoWithUserID:(NSString *)userid

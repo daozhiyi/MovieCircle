@@ -14,6 +14,7 @@
 //debug url
 #define kDebugURL                               (@"http://112.126.77.201/yingshiquanApp/index.php?")
 #define kReleaseURL                             (@"http://112.126.77.201/yingshiquanApp/index.php?")
+#define IMAGEURL_HOST                           (@"http://112.126.77.201/yingshiquanApp/data/images/")
 
 //width and height
 #define kDeviceHeight                           ([UIScreen mainScreen].bounds.size.height)
@@ -25,7 +26,7 @@
 
 
 #define kYellowColor                            ([UIColor colorWithRed:252.0/255.0 green:172.0/255.0 blue:10.0/255.0 alpha:1])
-
+#define kNavBarColor                            ([UIColor colorWithRed:40.0/255.0 green:40.0/255.0 blue:40.0/255.0 alpha:1])
 
 //develope key   IgTUqTE1NuQbAQfGAHkz1K6A
 #define kBaidu_AppKey                           (@"IgTUqTE1NuQbAQfGAHkz1K6A")
@@ -35,6 +36,15 @@
 
 
 
+=======
+/**
+ *  输出size或者Rect
+ */
+#define NSLogRect(rect) NSLog(@"%s x:%.4f, y:%.4f, w:%.4f, h:%.4f", #rect, rect.origin.x, rect.origin.y, rect.size.width, rect.size.height)
+#define NSLogSize(size) NSLog(@"%s w:%.4f, h:%.4f", #size, size.width, size.height)
+//masonry
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+>>>>>>> 30f0aa165ee0d9cacf69cb1fa54a3e1ff4d33ed3
 
 
 //appversion

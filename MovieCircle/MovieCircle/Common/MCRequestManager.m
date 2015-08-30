@@ -41,6 +41,37 @@ IMP_SINGLETON(MCRequestManager)
                  success:success
                  failure:failure];
 }
+//商品小分类
+- (void)goodsSmallCategoryWithBigCategoryId:(NSString *)bigCategoryId
+                                    success:(void (^)(id data))success
+                                    failure:(void (^)(NSError *error))failure
+{
+    NSString *url = [[MCConfiguration sharedInstance] smallCatetory];
+    
+    NSDictionary *params = @{@"parentid":bigCategoryId};
+    [self requestWithUrl:url
+                  method:@"POST"
+                  params:params
+                 success:success
+                 failure:failure];
+}
+//获取商品列表信息
+- (void)achieveGoodListByBigCategoryName:(NSString *)bigCategoryName
+                       smallCategoryName:(NSString *)smallCategoryName
+                                    page:(NSInteger)page
+                               pageCount:(NSInteger)pageCount
+                                 success:(void (^)(id))success
+                                 failure:(void (^)(NSError *))failure
+{
+    NSString *url  = [[MCConfiguration sharedInstance] goodsInfoList];
+    
+    NSDictionary *params = @{@"bigCategory":bigCategoryName,@"smallCategory":smallCategoryName,@"page":[NSNumber numberWithInteger:page],@"pagecount":[NSNumber numberWithInteger:pageCount]};
+    [self requestWithUrl:url
+                  method:@"POST"
+                  params:params
+                 success:success
+                 failure:failure];
+}
 
 //查询个人资料
 -(void)searchUserInfoWithUserID:(NSString *)userid

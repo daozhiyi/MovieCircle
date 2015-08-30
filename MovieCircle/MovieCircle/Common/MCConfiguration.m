@@ -75,10 +75,20 @@ IMP_SINGLETON(MCConfiguration)
 
 #pragma mark - url host
 
-//分类
+//大分类
 -(NSString *)bigCategory
 {
     return [_httpHost stringByAppendingString:@"g=Portal&m=common&a=goodsBigCategory"];
+}
+//小分类
+- (NSString *)smallCatetory
+{
+    return [_httpHost stringByAppendingString:@"g=Portal&m=common&a=goodsSmallCategory"];
+}
+
+- (NSString *)goodsInfoList
+{
+    return [_httpHost stringByAppendingString:@"g=Portal&m=goods&a=goodsInfoList"];
 }
 
 //查询个人资料

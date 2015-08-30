@@ -103,6 +103,31 @@
     return ret;
 }
 
+- (NSString *)imageUrlencode
+{
+    NSArray *strArr = [self componentsSeparatedByString:@"/"];
+    NSString *lastStr = [strArr objectAtIndex:(strArr.count - 1)];
+    NSInteger len = [lastStr length];
+    const char *c;
+    c = [lastStr UTF8String];
+    NSString *result = @"";
+    for (int i = 0; i < len; i++) {
+        switch (*c) {
+            case '{':
+                result = [result stringByAppendingString:@"%7B"];
+                break;
+            case '}':
+                result = [result stringByAppendingString:@"%7D"];
+                break;
+            default:
+                result = [result stringByAppendingFormat:@"%c",*c];
+                break;
+        }
+        c++;
+    }
+    return result;
+}
+
 - (NSString *)md5
 {
     const char *cStr = [self UTF8String];
