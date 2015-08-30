@@ -8,6 +8,8 @@
 
 #import "MCNearbyViewController.h"
 
+#import "MCActivityDetailViewController.h"
+
 
 @interface MCNearbyViewController ()
 
@@ -15,13 +17,36 @@
 
 @implementation MCNearbyViewController
 
+
+-(void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    [_mapView viewWillAppear];
+    _mapView.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    [_mapView viewWillDisappear];
+    _mapView.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+    
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
 
 //    self.title = @"附近";
 //    self.view.backgroundColor = [UIColor blueColor];
-//    self.navigationController.navigationBar.barTintColor = [UIColor greenColor];
+//    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
     
     self.nearbyTextField = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, 200, 30)];
     self.nearbyTextField.borderStyle = UITextBorderStyleLine;
@@ -176,6 +201,14 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 82;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.tabbarSelected.tag == 0) {
+        MCActivityDetailViewController *activity = [[MCActivityDetailViewController alloc]init];
+        [self.navigationController pushViewController:activity animated:YES];
+    }
 }
 
 //服务机构

@@ -23,6 +23,13 @@
 ////    self.navigationController.navigationBar.translucent = NO;
 //    self.navigationController.navigationBar.barTintColor = [UIColor yellowColor];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIBarButtonItem*backItem=[[UIBarButtonItem alloc]init];
+    backItem.title = @"";
+    self.navigationItem.backBarButtonItem = backItem;
+    self.navigationController.navigationBar.tintColor = kYellowColor;
+    
+    
     // Do any additional setup after loading the view.
 }
 

@@ -31,6 +31,7 @@
 #define kBaidu_AppKey                           (@"IgTUqTE1NuQbAQfGAHkz1K6A")
 
 
+#define kCellTextFont                           ([UIFont systemFontOfSize:14.0])
 
 
 

@@ -46,6 +46,9 @@
 		06C8C6CF1B608D7C0012DD4E /* payImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C8C6CA1B608D7C0012DD4E /* payImage0.png */; };
 		06C8C6D21B609F9F0012DD4E /* MCPayItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C8C6D11B609F9F0012DD4E /* MCPayItemButton.m */; };
 		06C8C6D91B611E560012DD4E /* MCMyWorksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C8C6D81B611E560012DD4E /* MCMyWorksViewController.m */; };
+		06D10FF91B92A2BB00B96F82 /* biaoqian2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06D10FF81B92A2BB00B96F82 /* biaoqian2@2x.png */; };
+		06D110011B92AE9000B96F82 /* MCActivityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D110001B92AE9000B96F82 /* MCActivityDetailViewController.m */; };
+		06D110041B92AF4C00B96F82 /* MCActivityJoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D110031B92AF4C00B96F82 /* MCActivityJoinViewController.m */; };
 		9ACC6A30C56818218B6711AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0EA6DB871BF48394B4C421 /* libPods.a */; };
 		B241355A1B48CD88006398B0 /* MCTabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B24135591B48CD88006398B0 /* MCTabbarButton.m */; };
 		B241356B1B48D6B8006398B0 /* shiying_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B241355B1B48D6B7006398B0 /* shiying_selected@3x.png */; };
@@ -160,6 +163,11 @@
 		06C8C6D11B609F9F0012DD4E /* MCPayItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPayItemButton.m; sourceTree = "<group>"; };
 		06C8C6D71B611E560012DD4E /* MCMyWorksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMyWorksViewController.h; sourceTree = "<group>"; };
 		06C8C6D81B611E560012DD4E /* MCMyWorksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMyWorksViewController.m; sourceTree = "<group>"; };
+		06D10FF81B92A2BB00B96F82 /* biaoqian2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biaoqian2@2x.png"; sourceTree = "<group>"; };
+		06D10FFF1B92AE9000B96F82 /* MCActivityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCActivityDetailViewController.h; sourceTree = "<group>"; };
+		06D110001B92AE9000B96F82 /* MCActivityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCActivityDetailViewController.m; sourceTree = "<group>"; };
+		06D110021B92AF4C00B96F82 /* MCActivityJoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCActivityJoinViewController.h; sourceTree = "<group>"; };
+		06D110031B92AF4C00B96F82 /* MCActivityJoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCActivityJoinViewController.m; sourceTree = "<group>"; };
 		9C0EA6DB871BF48394B4C421 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A186EAECD311F0766414FD0A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B24135581B48CD88006398B0 /* MCTabbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTabbarButton.h; sourceTree = "<group>"; };
@@ -330,6 +338,7 @@
 		06C8C6AD1B60887C0012DD4E /* nearby */ = {
 			isa = PBXGroup;
 			children = (
+				06D10FF81B92A2BB00B96F82 /* biaoqian2@2x.png */,
 				06C8C6AE1B6088920012DD4E /* ditu1@2x.png */,
 				06C8C6AF1B6088920012DD4E /* ditu2@2x.png */,
 				06C8C6B01B6088920012DD4E /* liebiao1@2x.png */,
@@ -362,6 +371,45 @@
 				06C8C6CA1B608D7C0012DD4E /* payImage0.png */,
 			);
 			name = pay;
+			sourceTree = "<group>";
+		};
+		06D10FFA1B92AD8B00B96F82 /* 群组 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "群组";
+			sourceTree = "<group>";
+		};
+		06D10FFB1B92AD8F00B96F82 /* 服务机构 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "服务机构";
+			sourceTree = "<group>";
+		};
+		06D10FFC1B92AD9300B96F82 /* 已完成项目 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "已完成项目";
+			sourceTree = "<group>";
+		};
+		06D10FFD1B92AD9600B96F82 /* 拍摄中项目 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "拍摄中项目";
+			sourceTree = "<group>";
+		};
+		06D10FFE1B92AD9900B96F82 /* 限时活动 */ = {
+			isa = PBXGroup;
+			children = (
+				06D10FFF1B92AE9000B96F82 /* MCActivityDetailViewController.h */,
+				06D110001B92AE9000B96F82 /* MCActivityDetailViewController.m */,
+				06D110021B92AF4C00B96F82 /* MCActivityJoinViewController.h */,
+				06D110031B92AF4C00B96F82 /* MCActivityJoinViewController.m */,
+			);
+			path = "限时活动";
 			sourceTree = "<group>";
 		};
 		06E7194E1B61B54400932172 /* rankingList */ = {
@@ -609,6 +657,11 @@
 		B2CC26F11B3FC113002D3A1F /* Nearby */ = {
 			isa = PBXGroup;
 			children = (
+				06D10FFE1B92AD9900B96F82 /* 限时活动 */,
+				06D10FFD1B92AD9600B96F82 /* 拍摄中项目 */,
+				06D10FFC1B92AD9300B96F82 /* 已完成项目 */,
+				06D10FFB1B92AD8F00B96F82 /* 服务机构 */,
+				06D10FFA1B92AD8B00B96F82 /* 群组 */,
 				B2CC272D1B3FCB95002D3A1F /* MCNearbyViewController.h */,
 				B2CC272E1B3FCB95002D3A1F /* MCNearbyViewController.m */,
 			);
@@ -727,6 +780,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06A801891B5EB76700F1F912 /* mapapi.bundle in Resources */,
+				06D10FF91B92A2BB00B96F82 /* biaoqian2@2x.png in Resources */,
 				B241356B1B48D6B8006398B0 /* shiying_selected@3x.png in Resources */,
 				06C8C6CC1B608D7C0012DD4E /* payImage3.png in Resources */,
 				B24135761B48D6B8006398B0 /* 图层-32@3x.png in Resources */,
@@ -846,12 +900,14 @@
 				063FFAC51B64C833007CCAD9 /* MCMyGroupViewController.m in Sources */,
 				06C8C6A71B6002C30012DD4E /* MCFeedBackViewController.m in Sources */,
 				B2CC26781B3F87AD002D3A1F /* main.m in Sources */,
+				06D110041B92AF4C00B96F82 /* MCActivityJoinViewController.m in Sources */,
 				B2CC27231B3FCB03002D3A1F /* UIFont+Design.m in Sources */,
 				B29DA22D1B4007B90020EC49 /* MCMainViewController.m in Sources */,
 				B2CC27141B3FC938002D3A1F /* MCAddition.m in Sources */,
 				06C8C6D21B609F9F0012DD4E /* MCPayItemButton.m in Sources */,
 				063FFACB1B64C8A1007CCAD9 /* MCMyActivityViewController.m in Sources */,
 				063FFABF1B64C7EE007CCAD9 /* MCMyMessageViewController.m in Sources */,
+				06D110011B92AE9000B96F82 /* MCActivityDetailViewController.m in Sources */,
 				063FFACE1B64C8CC007CCAD9 /* MCMySettingViewController.m in Sources */,
 				06C8C6A41B5FFB640012DD4E /* MCMineButton.m in Sources */,
 				B2CC272C1B3FCB7E002D3A1F /* MCPayViewController.m in Sources */,
